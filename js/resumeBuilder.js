@@ -46,7 +46,7 @@ This is empty on purpose! Your code to build the resume will go here.
          var formattedSkills = HTMLskills.replace("%data%", element);
          $("#skills").append(formattedSkills);
      });
- }
+ };
 
  bio.display();
 
@@ -82,7 +82,7 @@ This is empty on purpose! Your code to build the resume will go here.
          var formattedWorkDescription = HTMLworkDescription.replace("%data%", element.description);
          $(".work-entry:last").append(formattedWorkDescription);
      })
- }
+ };
 
  work.display();
 
@@ -109,7 +109,7 @@ This is empty on purpose! Your code to build the resume will go here.
              $(".project-entry:last").append(formattedProjectDescription);
          });
      });
- }
+ };
 
  projects.display();
 
@@ -142,7 +142,7 @@ This is empty on purpose! Your code to build the resume will go here.
  education.display = function() {
      education.schools.forEach(function(element) {
          $("#education").append(HTMLschoolStart);
-         var formattedSchoolName = HTMLschoolName.replace("%data%", element.name);
+         var formattedSchoolName = HTMLschoolName.replace("%data%", element.name).replace("#", element.url);
          $(".education-entry:last").append(formattedSchoolName);
          var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", element.degree);
          $(".education-entry:last").append(formattedSchoolDegree);
@@ -167,7 +167,7 @@ This is empty on purpose! Your code to build the resume will go here.
          var formattedOnlineURL = HTMLonlineURL.replace("%data%", element.url);
          $(".education-entry:last").append(formattedOnlineURL);
      });
- }
+ };
 
  education.display();
 
