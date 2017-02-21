@@ -81,7 +81,7 @@ This is empty on purpose! Your code to build the resume will go here.
          $(".work-entry:last").append(formattedWorkLocation);
          var formattedWorkDescription = HTMLworkDescription.replace("%data%", element.description);
          $(".work-entry:last").append(formattedWorkDescription);
-     })
+     });
  };
 
  work.display();
