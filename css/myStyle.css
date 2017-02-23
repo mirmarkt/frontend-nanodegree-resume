@@ -1,6 +1,7 @@
 .biopic {
   border-radius: 15%;
-  border: white solid;
+  border: white solid 10px;
+  padding: 0;
 }
 
 #main {
